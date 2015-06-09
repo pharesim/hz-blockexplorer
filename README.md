@@ -15,3 +15,9 @@ CLI
 
 chmod +x blocks
 ./blocks help
+
+
+DEV
+---
+
+Use HZ api calls instead of the backend, as it will be removed after distribution is done. It's only really needed for statistics.
