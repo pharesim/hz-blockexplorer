@@ -1,0 +1,233 @@
+<script type="text/javascript" language="javascript">
+
+
+$(document).ready(function() {
+    $('#assets').DataTable( {
+		 "iDisplayLength": 5,
+		 "language": {"search": "", "sSearchPlaceholder": "SEARCH FOR AN ASSET HERE" },
+		  "order": [[ 4, "desc" ]]
+    } );
+} );
+</script>
+
+<section id="title" class="alizarin" style="padding:0px;">
+  <div id="visible-phone-title" class="col-sm-12" style="text-align:center; margin-bottom:10px; padding:20px; padding-top:10px;">
+    <div class="titleh1">
+      <h2>Horizon Assets</h2>
+    </div>
+  </div>
+  <div id="visible-desktop-title" class="col-sm-12" style="text-align:center; margin-bottom:40px; padding:20px; padding-top:30px;">
+    <div class="titleh1">
+      <h1>Horizon Assets</h1>
+    </div>
+    <p>The complete list of Horizon assets.</p>
+  </div>
+  <div id="visible-tablet-title" class="col-sm-12" style="text-align:center; margin-bottom:80px; padding:20px; padding-top:40px;">
+    <div class="titleh1">
+      <h2>Horizon Assets</h2>
+    </div>
+    <p>The complete list of Horizon assets.</p>
+  </div>
+</section>
+<div class="container">
+  <div id="content" class="site-content" role="main">
+    <article id="post-94" class="post-94 page type-page status-publish has-post-thumbnail hentry">
+      <div class="entry-content">
+        <div class="su-row">
+          <div class="su-column su-column-size-3-4">
+            <div class="su-column-inner su-clearfix" >
+              <table id="assets" class="display" data-page-length='25'>
+                <thead>
+                  <tr>
+                    <th style="padding-left:10px;"><h5>Asset Name</h5></th>
+                    <th style="text-align:center;"><h5>Asset ID</h5></th>
+                    <th style="text-align:center;"><h5>Issuer</h5></th>
+                    <th style="text-align:center;"><h5>Quantity</h5></th>
+                    <th style="text-align:right;"><h5>Trades</h5></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+        foreach($this->data['assets'] as $key=>$asset):
+          ?>
+          
+          
+          
+          <?php
+		  
+		  $assettableid = $asset['asset'];
+		  
+		  
+		   if ($assettableid == "5212178092643023646") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "8403926581001397331") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "5775307130203681458") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "6064570393202131738") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "6514435468786467958") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "10125825002665257103") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "17067538143902361917") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "530655947034850299") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "14898347199061612248") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "13641101428334900737") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "69638395200605560") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "13945423225019915114") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3947582568091848112") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "6031837735445951763") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "11992325583255614320") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "11779472880507152465") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "516444404854068265") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "11636276892798997952") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "10655238247608520102") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3916395951772884737") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "17311033141480436678") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3006384484515645967") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3132193690854541767") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "8488430070882212021") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "14524763840711537066") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "8674272175314815234") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "13054934236606950277") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "659937484782948335") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "8245130993251243258") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "16677894337192537199") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "14987222114476755028") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "6778740801332148593") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "15038667158305572119") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "2893886211457290584") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "221660840630437109") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "12728383754406458583") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "2927435099930586280") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3530582287766915081") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "8788454077201084623") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "17015035857772928107") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "3483974851077320210") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "2724092140992197663") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+} elseif ($assettableid == "#") {
+    $assettableid = "style='display:none;'";
+}  else {
+    $assettableid = " id='".$assettableid."'";
+	
+}?>
+          
+          
+          
+                  <tr <?=$assettableid?>>
+                    <td><p style="text-transform:uppercase">
+                        <?=htmlspecialchars($asset['name'])?>
+                      </p></td>
+                    <td style="text-align:center;"><p style="text-transform:uppercase">
+                        <?=$asset['asset']?>
+                      </p></td>
+                    <td style="text-align:center;"><p style="text-transform:uppercase"> <a href="/?page=account&id=<?=$asset['account']?>">
+                        <?php if(isset($this->data['knownAddresses'][$asset['account']])): ?>
+                        <?=$this->data['knownAddresses'][$asset['account']];?>
+                        <?php else: ?>
+                        <?=$asset['accountrs']?>
+                        <?php endif; ?>
+                        </a></p></td>
+                    <td style="text-align:center;"><p>
+                       
+                        
+                        <?php if ($asset['decimals'] == "0") {
+    $asset['quantity'] = $asset['quantity'];
+} elseif ($asset['decimals'] == "1") {
+     $asset['quantity'] = $asset['quantity']/10;
+} elseif ($asset['decimals'] == "2") {
+     $asset['quantity'] = $asset['quantity']/100;
+} elseif ($asset['decimals'] == "3") {
+     $asset['quantity'] = $asset['quantity']/1000;
+} elseif ($asset['decimals'] == "4") {
+     $asset['quantity'] = $asset['quantity']/10000;
+} elseif ($asset['decimals'] == "5") {
+     $asset['quantity'] = $asset['quantity']/100000;
+} elseif ($asset['decimals'] == "6") {
+     $asset['quantity'] = $asset['quantity']/1000000;
+} elseif ($asset['decimals'] == "7") {
+     $asset['quantity'] = $asset['quantity']/10000000;
+} else {
+    $asset['quantity'] = $asset['quantity']/100000000;
+	
+}?> <?=$asset['quantity']?> 
+                      </p></td>
+                    <td style="text-align:right;"><p>
+                        <?=$asset['trades']?>
+                      </p></td>
+                  </tr>
+                  <?php endforeach; ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="su-column su-column-size-1-4">
+            <div class="su-column-inner su-clearfix">
+              <table>
+                <tr>
+                  <td><p class="dropcap">Please note that this page contains all of the assets available on the Horizon Platform and therefore we are unable to verify their quality.</p>
+                    <p>We strongly advise you to check out our <strong>TRUSTED ASSETS</strong> section by clicking the button below in order to make an informed choice before you invest.</p><div style="margin-top:20px"><a type="button" class="btn btn-primary" style="width:100%" href="https://horizonplatform.io/category/trusted-horizon-assets/">VIEW TRUSTED ASSETS</a></div></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
