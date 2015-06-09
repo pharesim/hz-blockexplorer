@@ -7,7 +7,7 @@ Edit config/config.php.default according to your needs and rename to config/conf
 
 Dependencies
 ------------
-nhz_db_parser.py >= 1.0.2
+explorer backend https://github.com/pharesim/hz-explorer-backend
 
 
 CLI
