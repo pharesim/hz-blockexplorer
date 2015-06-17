@@ -11,6 +11,7 @@ echo mv hz-blockexplorer/hz-blockexplorer /var/www/hzbe
 echo
 echo backend must be writeable by www-data
 echo mv hz-explorer-backend /opt
+echo sqlite3 /opt/hz-explorer-backend/explorer.db < /opt/hz-explorer-backend/db.txt
 echo chown www-data /opt/hz-explorer-backend -R
 echo
 echo create and edit the config file
