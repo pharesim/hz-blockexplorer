@@ -3,7 +3,7 @@
 $config['debug'] = false;
 
 /* database path and file */
-$config['dbpath']   = '../nhz_exp_v1.0.2/';
+$config['dbpath']   = '/opt/hz-explorer-backend/';
 $config['database'] = $config['dbpath'].'explorer.db';
 $config['dbcachesize'] = 131072;
 
