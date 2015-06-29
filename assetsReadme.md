@@ -25,9 +25,14 @@ Explanations:
 * links to external information: Videos, and long text "how to buy HZ, and how to buy a HZ asset - for newbies"
 
 ## examples
+
+These are working examples of the new function, proudly presenting my asset "AAssetHZ":
+
 * web page: proper asset http://188.226.155.38:8080/hzbe/?page=asset&id=8101260088962758269
 * web page: wrong asset id http://188.226.155.38:8080/hzbe/?page=asset&id=0
 * json api: proper asset http://188.226.155.38:8080/hzbe/api.php?page=asset&id=8101260088962758269
+
+Great, isn't it?
 
 ## warnings
 Some assets are known to be **test assets**, or **revoked**, or even **scams** (perhaps, probably or proven scams). 
@@ -39,11 +44,13 @@ So *all assets are still shown* - but in some cases with a clear warning.
 All is hardcoded into an XML file. I urge the team to always link back to a forum post where detailed explanations are given, and can be discussed - so that e.g. the issuer gets a chance to react to the suspicion.  
 
 examples:
-* test asset http://188.226.155.38:8080/hzbe/?page=asset&id=5903523947573024709
-* revoked asset  http://188.226.155.38:8080/hzbe/?page=asset&id=16661902544444460183
-* perhaps scam http://188.226.155.38:8080/hzbe/?page=asset&id=3
-* probably scam http://188.226.155.38:8080/hzbe/?page=asset&id=4
-* proven scam http://188.226.155.38:8080/hzbe/?page=asset&id=5
+* test asset http://188.226.155.38:8080/hzbe/?page=asset&id=5903523947573024709 clearly intended to be only a test
+* revoked asset  http://188.226.155.38:8080/hzbe/?page=asset&id=16661902544444460183 revoked by the issuer
+* perhaps scam http://188.226.155.38:8080/hzbe/?page=asset&id=3 there must be a heavy suspicion before using this!
+* probably scam http://188.226.155.38:8080/hzbe/?page=asset&id=4 almost sure, not many doubts left. 
+* proven scam http://188.226.155.38:8080/hzbe/?page=asset&id=5 definitely no doubts.
+
+In case he team decides to drop those warnings completely, the easiest way is to keep all code, but just delete the XML child nodes from data/assetwarnings.xml . If they are kept and extended, and that file ever gets large ... it might make sense to load it only once and keep it in memory, instead of for each call (like now). See the comments in my code. 
 
 ## affected files
 In comparison to the [original block explorer](https://github.com/pharesim/hz-blockexplorer) I have changed or added at least these files [in my fork](https://github.com/altsheets/hz-blockexplorer): 
