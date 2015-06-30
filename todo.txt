@@ -30,9 +30,14 @@ better would be to return an error code, see e.g. my new:
 
 ---
 
+inconsistency, depending on whether account or accountRS is used:
+
 https://explorer.horizonplatform.io/?page=account&id=12846730982802002083
 shows balance != 0
 
 https://explorer.horizonplatform.io/?page=account&id=NHZ-Q675-SGBG-LQ43-D38L6
 shows balance == 0
 
+probably fixed, see commit https://github.com/altsheets/hz-blockexplorer/commit/e9434d62a52d5fa464f4ef95fbb8931b888befd6
+
+---
