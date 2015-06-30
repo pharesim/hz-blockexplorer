@@ -504,6 +504,18 @@ public function getAssetData($id)     // (added by altsheets)
 
   public function calculateBalance($id, $transactions = null)
   {
+    // added by altsheets
+    // not sure if this is the correct fix
+    // but it repairs the problem
+    // explained in https://bitcointalk.org/index.php?topic=823785.msg11751822#msg11751822
+    //
+    if(!is_numeric($id))
+    {
+  	$id = $this->fromBlockchain(array('requestType'=>'rsConvert','account'=>$id))->account;
+    }
+    // end of altsheets change
+    //
+
     $account = $this->sqlEscape($id);
     $received = $this->find(
       'transactions',
