@@ -30,3 +30,9 @@ better would be to return an error code, see e.g. my new:
 
 ---
 
+https://explorer.horizonplatform.io/?page=account&id=12846730982802002083
+shows balance != 0
+
+https://explorer.horizonplatform.io/?page=account&id=NHZ-Q675-SGBG-LQ43-D38L6
+shows balance == 0
+
