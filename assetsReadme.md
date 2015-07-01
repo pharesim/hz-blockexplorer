@@ -73,7 +73,6 @@ In comparison to the [original block explorer](https://github.com/pharesim/hz-bl
 
 ... perhaps even more. Check the commits on https://github.com/altsheets/hz-blockexplorer .
 
-## if you do your diff (before pull request): 
 ## my first big commit went strange - manual diff needed
 My main changes & additions to pharesim's original source code were commited here: https://github.com/altsheets/hz-blockexplorer/commit/7b15ade59030c3c04cc60c8e4ce95e3d366c0aac and when you look at it, the github 'diff' view pretends that ALL lines have been changed - which is wrong, I changed only a tiny fraction. It perhaps came about when I transferred the files between Windows & Linux?
 
