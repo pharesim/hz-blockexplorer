@@ -13,19 +13,26 @@ $(document).ready(function() {
 </script>
 
 <section id="title" class="alizarin" style="padding:0px;">
+
   <div id="visible-phone-title" class="col-sm-12" 
        style="text-align:center; margin-bottom:10px; padding:20px; padding-top:10px;">
+       
+       Still TODO (unfinished code, I am lacking the device for testing this.)
+       
     <div class="titleh1">
-      <h2>Block #<?= $this->data['block']->height ?></h2>
+      <h2>Id, Name</h2>
     </div>
+    <p>lalala</p>
   </div>
+  
+  
   <div id="visible-desktop-title" class="col-sm-12" 
        style="text-align:center; margin-bottom:40px; padding:20px; padding-top:30px;">
     <div class="titleh1">
 
     <?php if(isset($this->data['asset']->asset)): ?>
     
-    <h1>Asset '<span class="redtext"><?=$this->data['asset']->name?></span>'</h1>
+    <h1>Asset '<span class="redtext"><?=htmlspecialchars($this->data['asset']->name)?></span>'</h1>
     <h1>Id <?= $this->data['asset']->asset ?></h1>
 
     <?php else: ?>
@@ -65,7 +72,7 @@ $(document).ready(function() {
             
     <tr>
       <td><h5 style="margin-top:2px;">name</h5></td>
-      <td><p><span class="redtext"><?=$this->data['asset']->name?></span></p></td>
+      <td><p><span class="redtext"><?=htmlspecialchars($this->data['asset']->name)?></span></p></td>
     </tr>            
             
     <tr>
@@ -80,7 +87,7 @@ $(document).ready(function() {
 
     <tr>
       <td><h5 style="margin-top:2px;">description</h5></td>
-      <td><p><span class="greentext"><?=$this->data['asset']->description?></span></p></td>
+      <td><p><span class="greentext"><?=htmlspecialchars($this->data['asset']->description)?></span></p></td>
     </tr>
 
     <tr>
@@ -185,7 +192,7 @@ $(document).ready(function() {
                 <tr>
                   <td colspan="2">
                   <p class="dropcap">This page shows basic information about an asset with the name 
-                  '<span class="redtext"><?= $this->data['asset']->name ?></span>' 
+                  '<span class="redtext"><?= htmlspecialchars($this->data['asset']->name) ?></span>' 
                   (careful, names need not be unique; always check for the id 
                   <span class="greentext"><?= $this->data['asset']->asset ?></span>).</p> 
                   
