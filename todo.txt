@@ -51,4 +51,15 @@ Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements
 Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
 Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
 
+---
 
+The w3validator results are ALMOST good now:
+https://validator.w3.org -> http://188.226.155.38:8080/hzbe/?page=asset&id=5903523947573024709
+
+https://validator.w3.org/check?uri=http%3A%2F%2F188.226.155.38%3A8080%2Fhzbe%2F%3Fpage%3Dasset%26id%3D5903523947573024709&charset=%28detect+automatically%29&doctype=Inline&ss=1&outline=1&group=1&st=1&user-agent=W3C_Validator%2F1.3+http%3A%2F%2Fvalidator.w3.org%2Fservices
+
+BUT "Line 509, column 6: Stray end tag div."
+ 
+That is the last line before my asset.phtml code starts.
+
+---
