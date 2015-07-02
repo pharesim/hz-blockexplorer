@@ -10,21 +10,7 @@
 
   <asset>
     <id>2</id>
-    <reason>testasset</reason>
-    <url>https://github.com/altsheets/hz-blockexplorer/tree/master/data/assetwarnings.xml</url>
-    <date>June 29th, 2015, 12:00:00</date>
-  </asset>
-
-  <asset>
-    <id>3</id>
-    <reason>perhaps scam</reason>
-    <url>https://github.com/altsheets/hz-blockexplorer/tree/master/data/assetwarnings.xml</url>
-    <date>June 29th, 2015, 12:00:00</date>
-  </asset>
-
-  <asset>
-    <id>4</id>
-    <reason>probably scam</reason>
+    <reason>test asset</reason>
     <url>https://github.com/altsheets/hz-blockexplorer/tree/master/data/assetwarnings.xml</url>
     <date>June 29th, 2015, 12:00:00</date>
   </asset>
