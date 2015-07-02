@@ -1,4 +1,5 @@
-some TODOs for the existing block explorer code that I noticed (while extending it with the asset page): 
+some TODOs for the existing block explorer code 
+that I noticed (while extending it with the asset page): 
 
 ---
 
@@ -30,15 +31,24 @@ better would be to return an error code, see e.g. my new:
 
 ---
 
-inconsistency, depending on whether account or accountRS is used:
+http://188.226.155.38:8080/hzbe/?page=account&id=3303930342834814977
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 32
+Notice: Undefined property: stdClass::$recipientRS in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 35
+Notice: Undefined property: stdClass::$recipient in /var/www/hzbe/views/elements/accountTransactionTable.phtml on line 37
 
-https://explorer.horizonplatform.io/?page=account&id=12846730982802002083
-shows balance != 0
 
-https://explorer.horizonplatform.io/?page=account&id=NHZ-Q675-SGBG-LQ43-D38L6
-shows balance == 0
-
-probably fixed, see commit https://github.com/altsheets/hz-blockexplorer/commit/e9434d62a52d5fa464f4ef95fbb8931b888befd6
-and bitcointalk post https://bitcointalk.org/index.php?topic=823785.msg11753742#msg11753742 for explanations
-
----

@@ -1,6 +1,6 @@
 <?php
 /* debug */
-$config['debug'] = true;
+$config['debug'] = false;
 
 /* database path and file */
 $config['dbpath']   = '/opt/hz-explorer-backend/';
