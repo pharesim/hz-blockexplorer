@@ -92,11 +92,10 @@ Please pull upstream into the official block explorer - that's why I have built 
 
 But please (a) keep my credits in there: 
 
-    The blockexplorer asset function was contributed by AltSheetsDev 
-    (who is not funded like the HZ core team), and is placed under 
-    my 'giveback license v04' (http://altsheets.ddns.net/give).
-    Click for how to support me - or simply send some HZ 
-    to NHZ-Q675-SGBG-LQ43-D38L6 now. Thanks.
+    This asset page function was contributed by AltSheetsDev. 
+    Placed under my 'giveback license v04'. Click for how  
+    to support me - or simply send some HZ to 
+    NHZ-Q675-SGBG-LQ43-D38L6 now. Thanks!
 
 and (b) consider to send me a big bounty for this work.
 
