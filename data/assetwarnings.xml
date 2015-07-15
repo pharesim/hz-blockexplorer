@@ -35,5 +35,12 @@
     <url>https://bitcointalk.org/index.php?topic=998804.msg10935080#msg10935080</url>
     <date>March 30, 2015, 10:53:12 UTC</date>
   </asset>
+  
+  <asset>
+    <id>3733170523104676119</id>
+    <reason>revoked</reason>
+    <url>https://bitcointalk.org/index.php?topic=998804.msg11236283#msg11236283</url>
+    <date>March 30th, 2015, 12:00:00</date>
+  </asset>
 
 </assetwarnings>
