@@ -13,7 +13,7 @@ explorer backend https://github.com/pharesim/hz-explorer-backend
 CLI
 ---
 
-chmod +x blocks
+chmod +x blocks;
 ./blocks help
 
 

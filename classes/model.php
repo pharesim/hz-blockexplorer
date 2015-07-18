@@ -310,6 +310,63 @@ class Model
     return $transaction;
   }
 
+  public function checkAssetWarnings($id)  // (added by altsheets)
+  // loads XML file with (possibly) problematic assets
+  // returns null if asset id not in XML file
+  // returns XML node if asset id is in XML file
+  //
+  // 
+  {
+  	// N.B.: It might make sense to load the file only once,
+  	// then keep in memory - instead of loading for each call:
+  	$xml=simplexml_load_file("data/assetwarnings.xml");
+  	
+  	$result = null; 
+  	foreach($xml->children() as $problematicAsset) {
+  		if ($problematicAsset->id == $id)  // will return the last match!
+  			$result = $problematicAsset;  
+  	};
+  	return $result;
+  }
+  
+public function getAssetData($id)     // (added by altsheets)
+  // gets all asset data from API
+  // if asset exists, then:
+  // transforms quantityQNT with decimals to quantity
+  // checks if there is an asset warning, if yes includes them.
+  {
+  	$asset = $this->fromBlockchain(array(
+  			'requestType'=>'getAsset',
+  			'asset'=>$id
+  	));
+  	
+  	if (! isset ($asset->errorCode) ){ 
+
+  		$quantity = $asset->quantityQNT;
+  		 
+  		for ($i = $asset->decimals; $i>0; $i--){
+  			$quantity = $quantity / 10;
+  		};
+  		$asset->quantity = $quantity;
+  		 
+  		// a future version of HZ will have these asset properties:
+  		// $asset->numberOfTransfers = "test1";
+  		// $asset->numberOfAccounts  = "test2";
+  		
+  		// question: Can it be assumed that the description is properly escaped,
+  		// or is it possible that an asset description can contain malicious code?
+  		// In the latter case, rather do something about it, by escaping it in here.
+  	}
+  	
+  	$warning = $this->checkAssetWarnings($id);
+  	if ($warning != null) {
+  		$asset->warning = $warning;
+  	}
+  	
+  	return $asset;
+  }
+  
+  
 /**
  * get transactions for account
  *
@@ -447,6 +504,18 @@ class Model
 
   public function calculateBalance($id, $transactions = null)
   {
+    // added by altsheets
+    // not sure if this is the correct fix
+    // but it repairs the problem
+    // explained in https://bitcointalk.org/index.php?topic=823785.msg11751822#msg11751822
+    //
+    if(!is_numeric($id))
+    {
+  	$id = $this->fromBlockchain(array('requestType'=>'rsConvert','account'=>$id))->account;
+    }
+    // end of altsheets change
+    //
+
     $account = $this->sqlEscape($id);
     $received = $this->find(
       'transactions',

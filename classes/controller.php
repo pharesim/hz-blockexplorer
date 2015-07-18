@@ -87,6 +87,11 @@ class Controller
     $this->innerView->assign('transactions', $this->model->homeTransactionData());
     return $this->innerView;
   }
+  
+//  public function homeAssets() {  // added by altsheets
+//  	$this->innerView->assign('assets', $this->model->homeAssetData());
+//  	return $this->innerView;
+//  }  
 
   public function account($id, $timestamp = false, $direction = 'DESC')
   {
@@ -156,6 +161,12 @@ class Controller
     return $this->innerView;
   }
 
+  public function asset($id)   // added by altsheets
+  {
+  	$this->innerView->assign('asset',$this->model->getAssetData($id));
+  	return $this->innerView;
+  }
+  
   public function search()
   {
     $result = $this->model->fullSearch($this->request['search']);
@@ -450,6 +461,17 @@ class Controller
             $id = $this->request[2];
           }
           break;
+        case 'asset':  // added by altsheets
+          if(isset($this->request['id']))
+          {
+          	$id = $this->request['id'];
+          }
+          elseif(isset($this->request[2]))
+          {
+          	$id = $this->request[2];
+          }
+          break;
+          
         case 'transactions':
           if(isset($this->request['timestamp']))
           {
@@ -501,6 +523,9 @@ class Controller
       case 'transaction':
         $this->innerView = $this->transaction($id);
         break;
+      case 'asset':			// added by altsheets
+      	$this->innerView = $this->asset($id);
+      	break;
       case 'block':
         $this->innerView = $this->block($height);
         break;
