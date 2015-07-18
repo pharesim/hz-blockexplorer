@@ -646,7 +646,8 @@ public function getAssetData($id)     // (added by altsheets)
         'giveaways',
         'sold',
         'dividends',
-	'nfd'
+	'nfd',
+	'foundation'
       );
     }
     elseif($type == 'blocks')
@@ -747,6 +748,10 @@ public function getAssetData($id)     // (added by altsheets)
 	array(
 	  'name'=>'nfd',
 	  'data'=>array()
+	),
+	array(
+	  'name'=>'foundation',
+	  'data'=>array()
 	)
       );
     }
@@ -785,6 +790,7 @@ public function getAssetData($id)     // (added by altsheets)
         $result[2]['data'][$i] = array($value['time'],$value['sold']);
         $result[6]['data'][$i] = array($value['time'],$value['dividends']);
         $result[7]['data'][$i] = array($value['time'],$value['nfd']);
+        $result[8]['data'][$i] = array($value['time'],$value['foundation']);
         $result[0]['data'][$i] = array($value['time'],$value['account_bounty']+$value['dev_bounty']+$value['node_bounty']+$value['giveaways']+$value['sold']+$value['dividends']+$value['nfd']);
       }
       elseif($type == 'blocks')
