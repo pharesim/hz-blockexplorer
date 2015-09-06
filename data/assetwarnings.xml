@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <assetwarnings>
-  <!-- <asset>
+<asset>
     <id>1</id>
     <reason>revoked</reason>
     <url>https://github.com/altsheets/hz-blockexplorer/tree/master/data/assetwarnings.xml</url>
@@ -20,7 +20,7 @@
     <reason>proven scam</reason>
     <url>https://github.com/altsheets/hz-blockexplorer/tree/master/data/assetwarnings.xml</url>
     <date>June 29th, 2015, 12:00:00</date>
-  </asset> -->
+  </asset>
 
   <asset>
     <id>5903523947573024709</id>
