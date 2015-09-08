@@ -28,9 +28,9 @@ Explanations:
 
 These are working examples of the new function, proudly presenting my asset "AAssetHZ":
 
-* web page: proper asset http://188.226.155.38:8080/hzbe/?page=asset&id=8101260088962758269
-* web page: wrong asset id http://188.226.155.38:8080/hzbe/?page=asset&id=0
-* json api: proper asset http://188.226.155.38:8080/hzbe/api.php?page=asset&id=8101260088962758269
+* web page: proper asset http://explorer.horizonplatform.io/?page=asset&id=8101260088962758269
+* web page: wrong asset id http://explorer.horizonplatform.io/?page=asset&id=0
+* json api: proper asset http://explorer.horizonplatform.io/api.php?page=asset&id=8101260088962758269
 
 Great, isn't it?
 
@@ -44,11 +44,11 @@ So *all assets are always still shown* - but in some cases with a clear warning.
 I urge the team to always link back to a forum post where detailed explanations are given, and can be discussed - so that e.g. the issuer gets a chance to react to the suspicion. 
 
 **examples:**
-* test asset http://188.226.155.38:8080/hzbe/?page=asset&id=5903523947573024709 clearly intended to be only a test
-* revoked asset  http://188.226.155.38:8080/hzbe/?page=asset&id=16661902544444460183 revoked by the issuer
-* ~~perhaps scam http://188.226.155.38:8080/hzbe/?page=asset&id=3 there must be a heavy suspicion before using this!~~
-* ~~probably scam http://188.226.155.38:8080/hzbe/?page=asset&id=4 almost sure, not many doubts left.~~ 
-* proven scam http://188.226.155.38:8080/hzbe/?page=asset&id=5 definitely no doubts.
+* test asset http://explorer.horizonplatform.io/?page=asset&id=5903523947573024709 clearly intended to be only a test
+* revoked asset  http://explorer.horizonplatform.io/?page=asset&id=16661902544444460183 revoked by the issuer
+* ~~perhaps scam http://explorer.horizonplatform.io/?page=asset&id=3 there must be a heavy suspicion before using this!~~
+* ~~probably scam http://explorer.horizonplatform.io/?page=asset&id=4 almost sure, not many doubts left.~~ 
+* proven scam http://explorer.horizonplatform.io/?page=asset&id=5 definitely no doubts.
 
 In case the team decides to drop all warnings completely, the easiest way is to keep all code intact, but just replace data/assetwarnings.xml by data/assetwarnings.xml.empty . In case the warnings are kept and extended, and that XML-file ever gets large ... it makes sense to load it only once and keep it in memory, instead of for each call (like now). See the comments in classes/model.php -> checkAssetWarnings(). 
 
@@ -100,8 +100,12 @@ and (b) consider to send me a big bounty for this work.
 
 Thanks a lot.
 
-    your happy AltSheetsDev on June 29th to July 2nd, 2015 
+    your happy AltSheetsDev on June 29th to July 2nd, 2015  
        
 
-### temporary notes
-When this is pulled upstream, replace all above 188.226.155.38:8080 with the official HZ blockexplorer domain. Then delete this note.
+### last words 
+All my suggestions were pulled upstream - so in this text, I've replaced my temporary URLs ... with the official HZ blockexplorer domain. B.E.E.f.A. is online! Good luck to HZ.
+
+     ... to September 8th, 2015
+  
+:-)
