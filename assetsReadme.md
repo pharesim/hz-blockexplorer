@@ -104,7 +104,7 @@ Thanks a lot.
        
 
 ### last words 
-All my suggestions were pulled upstream - so in this text, I've replaced my temporary URLs ... with the official HZ blockexplorer domain. B.E.E.f.A. is online! Good luck to HZ.
+All my suggestions were pulled upstream - so in this text, I've [replaced my temporary testserver URLs](https://github.com/altsheets/hz-blockexplorer/commit/915d7798b4d1acf863a9e5234ae45205cf795f52?w=1) ... with the official HZ blockexplorer domain. B.E.E.f.A. is online! Good luck to HZ.
 
      ... to September 8th, 2015
   
